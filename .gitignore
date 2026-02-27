@@ -1,0 +1,52 @@
+# Runtime / live data — regenerated every cron run
+data/signals.json
+data/latest-market-run.json
+data/latest-market-brief.txt
+data/backpack-snapshot.json
+data/backpack-snapshot-lite.json
+data/binance-context.json
+data/binance-context-history.jsonl
+data/microstructure-context.json
+data/microstructure-history.jsonl
+data/trigger-state.json
+data/alert-cooldown-state.json
+data/signal-outcome-events.jsonl
+data/signal-outcome-status.json
+data/signal-outcome-resolutions.jsonl
+data/phase1b-diagnostics-state.json
+data/phase1d-alerts.jsonl
+data/phase1d-alert-state.json
+data/autoresearch/price-15m.jsonl
+data/autoresearch/logs/
+data/autoresearch/
+data/archive/
+data/_telegram-latest.txt
+data/orchestrator-run-log.txt
+data/test-run.txt
+data/*.db
+data/*.jsonl
+data/**/*.jsonl
+data/*-history.json
+data/*-history.jsonl
+data/*-output.json
+data/*-working.json
+data/current-run-tmp.json
+data/temp-*.json
+data/market_intel.db
+data/extras/
+
+# Generated reports (commit intentionally if snapshotting)
+data/alert-quality-report.json
+data/alert-quality-report.md
+data/phase1b-replay-report.json
+data/phase1b-replay-report.md
+
+# Logs and scratch
+logs/
+reports/
+*.json
+/tmp/market-intel-scheduled.out
+/tmp/market-intel-scheduled.err
+
+# Node
+node_modules/
