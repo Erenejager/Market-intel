@@ -1,0 +1,60 @@
+# Readiness divergence review
+Generated: 2026-05-28T13:12:08.936Z
+all n=223 n4h=223 hit=50.2% avg=0.035%
+shadow_confirmed n=36 n4h=36 hit=52.8% avg=-0.058%
+setup_forming n=144 n4h=144 hit=49.3% avg=0.046%
+blocked n=22 n4h=22 hit=45.5% avg=-0.046%
+diverges_from_alert n=43 n4h=43 hit=51.2% avg=0.078%
+forming_not_confirmed n=144 n4h=144 hit=49.3% avg=0.046%
+confirmed_but_lost_4h n=17 n4h=17 hit=0.0% avg=-1.025%
+blocked_but_won_4h n=10 n4h=10 hit=100.0% avg=0.667%
+low_score_won_4h n=93 n4h=93 hit=100.0% avg=0.645%
+high_score_lost_4h n=17 n4h=17 hit=0.0% avg=-1.025%
+
+## Confirmed but lost 4h
+2026-05-13T13:21:50.116Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=80 div=null oi=FRESH_LONGS btc=BTC_WEAK_PENALIZE_ALT_LONGS ret4h=-2.524 pattern=
+2026-05-13T09:00:02.775Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=82 div=null oi=FRESH_LONGS btc=BTC_CONFIRMS_ALT_LONG_CONTEXT ret4h=-2.319 pattern=
+2026-05-28T00:45:02.569Z BTC LONG_CONFIRMED state=SHADOW_CONFIRMED score=70 div=null oi=FRESH_SHORTS btc=null ret4h=-1.862 pattern=FRESH_SHORTS_LONG
+2026-05-25T18:45:02.277Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=76 div=null oi=FRESH_SHORTS btc=BTC_PERMITS_ALT_LONG_OBSERVATION ret4h=-1.448 pattern=
+2026-05-18T12:15:02.324Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=83 div=null oi=FRESH_SHORTS btc=NEUTRAL ret4h=-1.402 pattern=
+2026-05-19T08:00:01.860Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=86 div=null oi=SHORTS_COVERING btc=BTC_CONFIRMS_ALT_LONG_CONTEXT ret4h=-1.305 pattern=
+2026-05-19T07:20:07.937Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=83 div=null oi=SHORTS_COVERING btc=BTC_CONFIRMS_ALT_LONG_CONTEXT ret4h=-1.013 pattern=
+2026-05-25T22:45:01.852Z ETH LONG_CONFIRMED state=SHADOW_CONFIRMED score=72 div=null oi=FRESH_SHORTS btc=NEUTRAL ret4h=-0.885 pattern=
+2026-05-14T16:15:02.483Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=77 div=null oi=FRESH_LONGS btc=BTC_CONFIRMS_ALT_LONG_CONTEXT ret4h=-0.850 pattern=
+2026-05-15T00:45:02.311Z BTC LONG_CONFIRMED state=SHADOW_CONFIRMED score=75 div=null oi=FRESH_LONGS btc=null ret4h=-0.740 pattern=
+2026-05-27T15:30:02.145Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=94 div=null oi=FRESH_SHORTS btc=BTC_PERMITS_ALT_LONG_OBSERVATION ret4h=-0.705 pattern=FRESH_SHORTS_LONG
+2026-05-14T18:15:02.118Z SOL LONG_CONFIRMED state=SHADOW_CONFIRMED score=77 div=null oi=FRESH_LONGS btc=BTC_CONFIRMS_ALT_LONG_CONTEXT ret4h=-0.595 pattern=
+
+## Blocked but won 4h
+2026-05-20T13:00:02.877Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=1.699 pattern=
+2026-05-20T11:15:02.501Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=1.243 pattern=
+2026-05-12T05:15:02.744Z ETH SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=NEUTRAL ret4h=1.128 pattern=
+2026-05-20T02:30:02.496Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=0.730 pattern=
+2026-05-11T23:00:02.168Z BTC SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=NEUTRAL btc=null ret4h=0.728 pattern=
+2026-05-22T05:15:03.139Z BTC SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_LONGS btc=null ret4h=0.517 pattern=
+2026-05-22T14:30:02.275Z BTC SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_LONGS btc=null ret4h=0.356 pattern=
+2026-05-21T18:30:02.382Z BTC SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_LONGS btc=null ret4h=0.139 pattern=
+2026-05-27T01:30:02.006Z ETH LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=0.103 pattern=FRESH_SHORTS_LONG
+2026-05-17T07:20:56.879Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=NEUTRAL btc=BTC_WEAK_PENALIZE_ALT_LONGS ret4h=0.029 pattern=
+
+## Diverges from alert
+2026-05-23T05:15:02.224Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=-2.712 pattern=
+2026-05-20T13:19:39.958Z SOL SHORT_CONFIRMED state=SHADOW_NO_SETUP score=24 div=diverges_from_alert oi=NEUTRAL btc=BTC_WEAK_VETO_ALT_LONGS ret4h=-2.222 pattern=
+2026-05-20T13:00:02.877Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=1.699 pattern=
+2026-05-17T21:00:02.427Z SOL SHORT_CONFIRMED state=SHADOW_NO_SETUP score=24 div=diverges_from_alert oi=NEUTRAL btc=NEUTRAL ret4h=1.634 pattern=
+2026-05-26T11:15:02.713Z ETH SHORT_CONFIRMED state=SHADOW_NO_SETUP score=35 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=1.305 pattern=
+2026-05-20T11:15:02.501Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=1.243 pattern=
+2026-05-12T05:15:02.744Z ETH SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=NEUTRAL ret4h=1.128 pattern=
+2026-05-15T12:15:02.494Z ETH SHORT_CONFIRMED state=SHADOW_NO_SETUP score=29 div=diverges_from_alert oi=NEUTRAL btc=BTC_WEAK_PENALIZE_ALT_LONGS ret4h=1.061 pattern=
+2026-05-18T13:19:58.890Z SOL SHORT_CONFIRMED state=SHADOW_NO_SETUP score=24 div=diverges_from_alert oi=NEUTRAL btc=NEUTRAL ret4h=0.991 pattern=
+2026-05-27T18:00:02.472Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=-0.991 pattern=FRESH_SHORTS_LONG
+2026-05-18T02:15:02.543Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_PENALIZE_ALT_LONGS ret4h=-0.944 pattern=
+2026-05-20T01:45:01.800Z BTC LONG_CONFIRMED state=SHADOW_NO_SETUP score=38 div=diverges_from_alert oi=LONGS_EXITING btc=null ret4h=0.751 pattern=
+2026-05-20T02:30:02.496Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_SHORTS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=0.730 pattern=
+2026-05-11T23:00:02.168Z BTC SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=NEUTRAL btc=null ret4h=0.728 pattern=
+2026-05-21T21:00:02.629Z SOL SHORT_CONFIRMED state=SHADOW_NO_SETUP score=30 div=diverges_from_alert oi=SHORTS_COVERING btc=NEUTRAL ret4h=0.714 pattern=
+2026-05-09T21:30:02.304Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=SHORTS_COVERING btc=NEUTRAL ret4h=-0.627 pattern=
+2026-05-19T06:00:02.782Z SOL LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_LONGS btc=BTC_WEAK_VETO_ALT_LONGS ret4h=-0.570 pattern=
+2026-05-16T21:05:48.017Z SOL SHORT_CONFIRMED state=SHADOW_NO_SETUP score=39 div=diverges_from_alert oi=NEUTRAL btc=BTC_STRONG_ALT_NOT_FOLLOWING ret4h=0.548 pattern=
+2026-05-22T05:15:03.139Z BTC SHORT_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=FRESH_LONGS btc=null ret4h=0.517 pattern=
+2026-05-15T18:15:02.016Z ETH LONG_CONFIRMED state=SHADOW_BLOCKED score=0 div=diverges_from_alert oi=NEUTRAL btc=BTC_WEAK_PENALIZE_ALT_LONGS ret4h=-0.506 pattern=
