@@ -1,0 +1,109 @@
+nontelegram directional hypotheses 3407
+
+## asset_type_mode
+KEY ('ETH', 'LONG_CONFIRMED', 'inverse_of_LONG_as_SHORT') raw 28 dedup 25 BEST 5 h 76.0% avg +0.325
+  1h n=25 win=64.0% avg=+0.137% med=+0.117% MFE=+0.190%@30m MAE=-0.078%@30m
+  2h n=25 win=68.0% avg=+0.209% med=+0.200% MFE=+0.291%@75m MAE=-0.104%@60m
+  3h n=25 win=68.0% avg=+0.230% med=+0.175% MFE=+0.312%@90m MAE=-0.156%@60m
+  4h n=25 win=76.0% avg=+0.312% med=+0.230% MFE=+0.468%@165m MAE=-0.156%@60m
+  5h n=25 win=76.0% avg=+0.325% med=+0.323% MFE=+0.614%@210m MAE=-0.314%@90m
+  6h n=25 win=64.0% avg=+0.336% med=+0.368% MFE=+0.760%@225m MAE=-0.514%@105m
+
+## asset_flow_mode
+KEY ('BTC', 'SPOT_LED_ACCUMULATION', 'natural_LONG') raw 46 dedup 33 BEST 2 h 78.8% avg +0.295
+  1h n=33 win=63.6% avg=+0.143% med=+0.096% MFE=+0.183%@30m MAE=-0.083%@30m
+  2h n=33 win=78.8% avg=+0.295% med=+0.307% MFE=+0.431%@75m MAE=-0.105%@30m
+  3h n=33 win=72.7% avg=+0.325% med=+0.333% MFE=+0.530%@105m MAE=-0.136%@45m
+  4h n=33 win=78.8% avg=+0.286% med=+0.282% MFE=+0.566%@135m MAE=-0.208%@60m
+  5h n=32 win=68.8% avg=+0.177% med=+0.202% MFE=+0.573%@172m MAE=-0.196%@67m
+  6h n=31 win=64.5% avg=+0.221% med=+0.325% MFE=+0.727%@225m MAE=-0.212%@150m
+KEY ('ETH', 'STRUCTURAL_BUYING', 'inverse_of_LONG_as_SHORT') raw 59 dedup 41 BEST 2 h 72.5% avg +0.208
+  1h n=41 win=56.1% avg=+0.166% med=+0.082% MFE=+0.143%@45m MAE=-0.130%@30m
+  2h n=40 win=72.5% avg=+0.208% med=+0.254% MFE=+0.382%@90m MAE=-0.176%@45m
+  3h n=40 win=67.5% avg=+0.080% med=+0.149% MFE=+0.447%@120m MAE=-0.201%@45m
+  4h n=39 win=69.2% avg=+0.134% med=+0.244% MFE=+0.587%@150m MAE=-0.225%@45m
+  5h n=39 win=69.2% avg=+0.116% med=+0.288% MFE=+0.657%@180m MAE=-0.229%@45m
+  6h n=39 win=56.4% avg=-0.162% med=+0.123% MFE=+0.718%@180m MAE=-0.294%@75m
+
+## asset_oi_fund_mode
+
+## asset_state_mode
+KEY ('SOL', 'SHADOW_CONFIRMED', 'inverse_of_LONG_as_SHORT') raw 11 dedup 10 BEST 6 h 90.0% avg +1.460
+  1h n=10 win=60.0% avg=+0.167% med=+0.098% MFE=+0.208%@45m MAE=-0.120%@30m
+  2h n=10 win=60.0% avg=+0.088% med=+0.148% MFE=+0.287%@82m MAE=-0.239%@97m
+  3h n=10 win=90.0% avg=+0.490% med=+0.230% MFE=+0.443%@135m MAE=-0.239%@105m
+  4h n=10 win=80.0% avg=+0.831% med=+0.715% MFE=+0.468%@202m MAE=-0.239%@105m
+  5h n=10 win=90.0% avg=+1.017% med=+1.095% MFE=+1.174%@277m MAE=-0.239%@105m
+  6h n=10 win=90.0% avg=+1.460% med=+1.800% MFE=+1.467%@285m MAE=-0.325%@105m
+KEY ('BTC', 'SHADOW_SETUP_FORMING', 'natural_LONG') raw 22 dedup 17 BEST 3 h 82.4% avg +0.459
+  1h n=17 win=64.7% avg=+0.174% med=+0.237% MFE=+0.196%@45m MAE=-0.127%@30m
+  2h n=17 win=76.5% avg=+0.337% med=+0.344% MFE=+0.431%@75m MAE=-0.137%@30m
+  3h n=17 win=82.4% avg=+0.459% med=+0.480% MFE=+0.609%@105m MAE=-0.137%@30m
+  4h n=17 win=82.4% avg=+0.424% med=+0.445% MFE=+0.762%@165m MAE=-0.137%@30m
+  5h n=17 win=64.7% avg=+0.267% med=+0.421% MFE=+0.925%@195m MAE=-0.152%@45m
+  6h n=17 win=58.8% avg=+0.303% med=+0.360% MFE=+0.925%@225m MAE=-0.174%@60m
+KEY ('ETH', 'SHADOW_BLOCKED', 'inverse_of_LONG_as_SHORT') raw 32 dedup 24 BEST 2 h 73.9% avg +0.188
+  1h n=23 win=56.5% avg=+0.139% med=+0.078% MFE=+0.183%@45m MAE=-0.055%@30m
+  2h n=23 win=73.9% avg=+0.188% med=+0.144% MFE=+0.337%@75m MAE=-0.128%@45m
+  3h n=23 win=69.6% avg=+0.201% med=+0.127% MFE=+0.522%@135m MAE=-0.172%@60m
+  4h n=23 win=60.9% avg=+0.247% med=+0.204% MFE=+0.543%@150m MAE=-0.244%@60m
+  5h n=23 win=69.6% avg=+0.365% med=+0.241% MFE=+0.576%@165m MAE=-0.334%@120m
+  6h n=23 win=60.9% avg=+0.338% med=+0.393% MFE=+0.836%@240m MAE=-0.334%@150m
+KEY ('ETH', 'SHADOW_NO_SETUP', 'inverse_of_LONG_as_SHORT') raw 31 dedup 28 BEST 4 h 73.1% avg +0.205
+  1h n=28 win=50.0% avg=-0.016% med=+0.026% MFE=+0.136%@30m MAE=-0.176%@30m
+  2h n=27 win=55.6% avg=+0.166% med=+0.261% MFE=+0.291%@90m MAE=-0.211%@45m
+  3h n=27 win=63.0% avg=+0.068% med=+0.418% MFE=+0.718%@150m MAE=-0.225%@60m
+  4h n=26 win=73.1% avg=+0.205% med=+0.537% MFE=+0.851%@150m MAE=-0.247%@60m
+  5h n=26 win=65.4% avg=+0.105% med=+0.470% MFE=+1.057%@187m MAE=-0.283%@60m
+  6h n=26 win=53.8% avg=-0.099% med=+0.358% MFE=+1.057%@187m MAE=-0.338%@75m
+KEY ('ETH', 'SHADOW_SETUP_FORMING', 'inverse_of_LONG_as_SHORT') raw 52 dedup 41 BEST 5 h 72.5% avg +0.286
+  1h n=41 win=51.2% avg=+0.127% med=+0.055% MFE=+0.168%@45m MAE=-0.072%@30m
+  2h n=41 win=65.9% avg=+0.137% med=+0.116% MFE=+0.327%@90m MAE=-0.160%@45m
+  3h n=40 win=67.5% avg=+0.206% med=+0.198% MFE=+0.401%@105m MAE=-0.198%@60m
+  4h n=40 win=70.0% avg=+0.291% med=+0.346% MFE=+0.528%@157m MAE=-0.242%@67m
+  5h n=40 win=72.5% avg=+0.286% med=+0.273% MFE=+0.655%@210m MAE=-0.263%@75m
+  6h n=40 win=62.5% avg=+0.151% med=+0.207% MFE=+0.696%@232m MAE=-0.334%@105m
+
+## asset_type_flow_mode
+KEY ('SOL', 'LONG_CONFIRMED', 'STRUCTURAL_BUYING', 'inverse_of_LONG_as_SHORT') raw 12 dedup 11 BEST 5 h 90.9% avg +1.007
+  1h n=11 win=54.5% avg=+0.176% med=+0.194% MFE=+0.361%@45m MAE=-0.049%@30m
+  2h n=11 win=54.5% avg=+0.099% med=+0.168% MFE=+0.609%@45m MAE=-0.216%@90m
+  3h n=11 win=72.7% avg=+0.569% med=+0.202% MFE=+0.609%@90m MAE=-0.241%@90m
+  4h n=11 win=54.5% avg=+0.525% med=+0.037% MFE=+0.609%@180m MAE=-0.423%@105m
+  5h n=11 win=90.9% avg=+1.007% med=+0.353% MFE=+1.043%@180m MAE=-0.423%@105m
+  6h n=11 win=81.8% avg=+1.287% med=+0.879% MFE=+1.073%@180m MAE=-0.423%@105m
+KEY ('ETH', 'LONG_CONFIRMED', 'SPOT_LED_ACCUMULATION', 'inverse_of_LONG_as_SHORT') raw 15 dedup 14 BEST 4 h 85.7% avg +0.539
+  1h n=14 win=64.3% avg=+0.218% med=+0.124% MFE=+0.229%@30m MAE=-0.069%@37m
+  2h n=14 win=78.6% avg=+0.273% med=+0.266% MFE=+0.300%@82m MAE=-0.093%@52m
+  3h n=14 win=78.6% avg=+0.421% med=+0.398% MFE=+0.390%@127m MAE=-0.093%@52m
+  4h n=14 win=85.7% avg=+0.539% med=+0.335% MFE=+0.541%@195m MAE=-0.093%@52m
+  5h n=14 win=78.6% avg=+0.597% med=+0.551% MFE=+0.715%@202m MAE=-0.093%@90m
+  6h n=14 win=78.6% avg=+0.671% med=+0.692% MFE=+1.197%@255m MAE=-0.121%@90m
+KEY ('BTC', 'LONG_CONFIRMED', 'SPOT_LED_ACCUMULATION', 'natural_LONG') raw 11 dedup 11 BEST 4 h 81.8% avg +0.189
+  1h n=11 win=72.7% avg=+0.336% med=+0.139% MFE=+0.216%@45m MAE=-0.137%@15m
+  2h n=11 win=72.7% avg=+0.289% med=+0.283% MFE=+0.428%@75m MAE=-0.137%@30m
+  3h n=11 win=72.7% avg=+0.321% med=+0.143% MFE=+0.430%@105m MAE=-0.137%@45m
+  4h n=11 win=81.8% avg=+0.189% med=+0.098% MFE=+0.465%@135m MAE=-0.175%@45m
+  5h n=10 win=50.0% avg=+0.257% med=+0.136% MFE=+0.613%@195m MAE=-0.210%@90m
+  6h n=10 win=60.0% avg=+0.316% med=+0.241% MFE=+0.843%@255m MAE=-0.276%@195m
+KEY ('BTC', 'LONG_SETUP', 'SPOT_LED_ACCUMULATION', 'natural_LONG') raw 35 dedup 33 BEST 2 h 78.8% avg +0.295
+  1h n=33 win=63.6% avg=+0.143% med=+0.096% MFE=+0.183%@30m MAE=-0.083%@30m
+  2h n=33 win=78.8% avg=+0.295% med=+0.307% MFE=+0.431%@75m MAE=-0.105%@30m
+  3h n=33 win=72.7% avg=+0.325% med=+0.333% MFE=+0.530%@105m MAE=-0.136%@45m
+  4h n=33 win=78.8% avg=+0.286% med=+0.282% MFE=+0.566%@135m MAE=-0.208%@60m
+  5h n=32 win=68.8% avg=+0.177% med=+0.202% MFE=+0.573%@172m MAE=-0.196%@67m
+  6h n=31 win=64.5% avg=+0.221% med=+0.325% MFE=+0.727%@225m MAE=-0.212%@150m
+KEY ('ETH', 'LONG_CONFIRMED', 'STRUCTURAL_BUYING', 'inverse_of_LONG_as_SHORT') raw 13 dedup 13 BEST 5 h 76.9% avg +0.129
+  1h n=13 win=69.2% avg=+0.083% med=+0.122% MFE=+0.276%@60m MAE=-0.078%@30m
+  2h n=13 win=61.5% avg=+0.181% med=+0.115% MFE=+0.363%@90m MAE=-0.156%@60m
+  3h n=13 win=61.5% avg=+0.119% med=+0.175% MFE=+0.387%@90m MAE=-0.190%@105m
+  4h n=13 win=69.2% avg=+0.167% med=+0.165% MFE=+0.449%@165m MAE=-0.190%@105m
+  5h n=13 win=76.9% avg=+0.129% med=+0.460% MFE=+0.560%@225m MAE=-0.549%@105m
+  6h n=13 win=53.8% avg=+0.132% med=+0.330% MFE=+0.651%@240m MAE=-0.551%@120m
+KEY ('ETH', 'LONG_SETUP', 'STRUCTURAL_BUYING', 'inverse_of_LONG_as_SHORT') raw 46 dedup 41 BEST 2 h 72.5% avg +0.208
+  1h n=41 win=56.1% avg=+0.166% med=+0.082% MFE=+0.143%@45m MAE=-0.130%@30m
+  2h n=40 win=72.5% avg=+0.208% med=+0.254% MFE=+0.382%@90m MAE=-0.176%@45m
+  3h n=40 win=67.5% avg=+0.080% med=+0.149% MFE=+0.447%@120m MAE=-0.201%@45m
+  4h n=39 win=69.2% avg=+0.134% med=+0.244% MFE=+0.587%@150m MAE=-0.225%@45m
+  5h n=39 win=69.2% avg=+0.116% med=+0.288% MFE=+0.657%@180m MAE=-0.229%@45m
+  6h n=39 win=56.4% avg=-0.162% med=+0.123% MFE=+0.718%@180m MAE=-0.294%@75m
