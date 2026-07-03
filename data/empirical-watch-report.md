@@ -1,0 +1,111 @@
+# Empirical Watch Win-Rate Report
+
+Generated: 2026-08-27T22:10:40.813Z
+Tracked rows: 4940
+
+Review rule: flag a bucket when complete n>=8 and either 1h hit <55% / avg <=0, or 4h hit <50% / avg <=0. Buckets below n=8 stay LOW_N_TRACKING, not validated.
+
+## Bucket summary
+- ⚠️ FADE_SHORT_LATE_AFTER_LOW: REVIEW_OR_UNTRACK | n=1356 | 1h 47.5% avg 0.013% n=1355 | 4h 48.6% avg 0.058% n=1351
+  - Review: 1h degraded: hit 47.5% avg 0.013% over n=1355
+  - Review: 4h degraded: hit 48.6% avg 0.058% over n=1351
+- ⚠️ SOL_LONG_WATCH_ONLY: REVIEW_OR_UNTRACK | n=696 | 1h 53.2% avg 0.025% n=695 | 4h 49.4% avg 0.030% n=694
+  - Review: 1h degraded: hit 53.2% avg 0.025% over n=695
+  - Review: 4h degraded: hit 49.4% avg 0.030% over n=694
+- ⚠️ BTC_LONG_SETUP_INVERSE_SHORT_POSTFIX: REVIEW_OR_UNTRACK | n=423 | 1h 49.6% avg -0.021% n=423 | 4h 50.4% avg -0.061% n=421
+  - Review: 1h degraded: hit 49.6% avg -0.021% over n=423
+  - Review: 4h degraded: hit 50.4% avg -0.061% over n=421
+- ⚠️ ETH_LONG_SETUP_STRUCTURAL_BUYING_INVERSE_SHORT: REVIEW_OR_UNTRACK | n=240 | 1h 50.0% avg -0.027% n=240 | 4h 50.4% avg -0.042% n=240
+  - Review: 1h degraded: hit 50.0% avg -0.027% over n=240
+  - Review: 4h degraded: hit 50.4% avg -0.042% over n=240
+- ⚠️ NEUTRAL_OI_LONG: REVIEW_OR_UNTRACK | n=238 | 1h 42.4% avg -0.074% n=238 | 4h 41.2% avg -0.114% n=238
+  - Review: 1h degraded: hit 42.4% avg -0.074% over n=238
+  - Review: 4h degraded: hit 41.2% avg -0.114% over n=238
+- ⚠️ ETH_BTC_PERMITS_ALT_LONG_INVERSE_SHORT_POSTFIX: REVIEW_OR_UNTRACK | n=207 | 1h 47.8% avg -0.066% n=207 | 4h 47.8% avg -0.127% n=207
+  - Review: 1h degraded: hit 47.8% avg -0.066% over n=207
+  - Review: 4h degraded: hit 47.8% avg -0.127% over n=207
+- ⚠️ ETH_LONG_BLOCKED_SELL_PRESSURE_INVERSE_SHORT_POSTFIX: REVIEW_OR_UNTRACK | n=200 | 1h 42.2% avg -0.050% n=199 | 4h 46.2% avg -0.153% n=199
+  - Review: 1h degraded: hit 42.2% avg -0.050% over n=199
+  - Review: 4h degraded: hit 46.2% avg -0.153% over n=199
+- ⚠️ ETH_LONG_SHADOW_NO_SETUP_INVERSE_SHORT: REVIEW_OR_UNTRACK | n=193 | 1h 53.4% avg -0.016% n=193 | 4h 47.9% avg -0.141% n=192
+  - Review: 1h degraded: hit 53.4% avg -0.016% over n=193
+  - Review: 4h degraded: hit 47.9% avg -0.141% over n=192
+- ⚠️ FADE_SHORT_POSITIVE_FUNDING: REVIEW_OR_UNTRACK | n=182 | 1h 50.5% avg 0.066% n=182 | 4h 53.6% avg 0.193% n=181
+  - Review: 1h degraded: hit 50.5% avg 0.066% over n=182
+- ⚠️ ETH_LONG_SHADOW_BLOCKED_INVERSE_SHORT: REVIEW_OR_UNTRACK | n=179 | 1h 53.1% avg 0.083% n=179 | 4h 45.8% avg -0.065% n=179
+  - Review: 1h degraded: hit 53.1% avg 0.083% over n=179
+  - Review: 4h degraded: hit 45.8% avg -0.065% over n=179
+- ⚠️ T1_FRESH_LONGS_LONG: REVIEW_OR_UNTRACK | n=176 | 1h 49.6% avg -0.011% n=123 | 4h 49.6% avg -0.148% n=123
+  - Review: 1h degraded: hit 49.6% avg -0.011% over n=123
+  - Review: 4h degraded: hit 49.6% avg -0.148% over n=123
+- ⚠️ LONGS_EXITING_LONG_UNVALIDATED: REVIEW_OR_UNTRACK | n=163 | 1h 48.5% avg 0.024% n=163 | 4h 54.6% avg 0.043% n=163
+  - Review: 1h degraded: hit 48.5% avg 0.024% over n=163
+- ⚠️ SOL_SHORT_BLOCKED_SPOT_LED_INVERSE_LONG_POSTFIX: REVIEW_OR_UNTRACK | n=135 | 1h 47.4% avg 0.046% n=135 | 4h 48.1% avg 0.099% n=135
+  - Review: 1h degraded: hit 47.4% avg 0.046% over n=135
+  - Review: 4h degraded: hit 48.1% avg 0.099% over n=135
+- ⚠️ FRESH_SHORTS_LONG: REVIEW_OR_UNTRACK | n=82 | 1h 52.4% avg 0.150% n=82 | 4h 58.5% avg 0.293% n=82
+  - Review: 1h degraded: hit 52.4% avg 0.150% over n=82
+- ⚠️ SHORTS_COVERING_LONG_UNVALIDATED: REVIEW_OR_UNTRACK | n=77 | 1h 40.3% avg -0.157% n=77 | 4h 29.9% avg -0.268% n=77
+  - Review: 1h degraded: hit 40.3% avg -0.157% over n=77
+  - Review: 4h degraded: hit 29.9% avg -0.268% over n=77
+- ⚠️ SOL_SHORT_BELOW_GATE_WATCH: REVIEW_OR_UNTRACK | n=71 | 1h 47.9% avg 0.008% n=71 | 4h 53.5% avg -0.145% n=71
+  - Review: 1h degraded: hit 47.9% avg 0.008% over n=71
+  - Review: 4h degraded: hit 53.5% avg -0.145% over n=71
+- ⚠️ FRESH_LONGS_LONG_UNVALIDATED: REVIEW_OR_UNTRACK | n=62 | 1h 50.0% avg -0.050% n=62 | 4h 46.8% avg -0.021% n=62
+  - Review: 1h degraded: hit 50.0% avg -0.050% over n=62
+  - Review: 4h degraded: hit 46.8% avg -0.021% over n=62
+- ⚠️ SOL_LONG_CONFIRMED_STRUCTURAL_BUYING_INVERSE_SHORT: REVIEW_OR_UNTRACK | n=58 | 1h 39.7% avg -0.166% n=58 | 4h 51.7% avg -0.231% n=58
+  - Review: 1h degraded: hit 39.7% avg -0.166% over n=58
+  - Review: 4h degraded: hit 51.7% avg -0.231% over n=58
+- ✅ ETH_LONG_CONFIRMED_INVERSE_SHORT: KEEP_TRACKING | n=49 | 1h 69.4% avg 0.112% n=49 | 4h 61.2% avg 0.247% n=49
+- ⚠️ SOL_SHORTS_COVERING_BROAD_SHORT_PRESSURE_INVERSE_SHORT_POSTFIX: REVIEW_OR_UNTRACK | n=49 | 1h 49.0% avg -0.085% n=49 | 4h 51.0% avg -0.030% n=49
+  - Review: 1h degraded: hit 49.0% avg -0.085% over n=49
+  - Review: 4h degraded: hit 51.0% avg -0.030% over n=49
+- ⚠️ ETH_LONG_CONFIRMED_SPOT_LED_INVERSE_SHORT: REVIEW_OR_UNTRACK | n=47 | 1h 55.3% avg 0.011% n=47 | 4h 53.2% avg -0.021% n=47
+  - Review: 4h degraded: hit 53.2% avg -0.021% over n=47
+- ⚠️ ETH_LONG_SHADOW_SETUP_FORMING_INVERSE_SHORT: REVIEW_OR_UNTRACK | n=31 | 1h 54.8% avg 0.129% n=31 | 4h 46.7% avg 0.049% n=30
+  - Review: 1h degraded: hit 54.8% avg 0.129% over n=31
+  - Review: 4h degraded: hit 46.7% avg 0.049% over n=30
+- ⚠️ ETH_LONGS_EXITING_BROAD_SHORT_PRESSURE_LONG_POSTFIX: REVIEW_OR_UNTRACK | n=15 | 1h 53.3% avg 0.047% n=15 | 4h 60.0% avg 0.120% n=15
+  - Review: 1h degraded: hit 53.3% avg 0.047% over n=15
+- 🟡 N1_GATE_COST: LOW_N_TRACKING | n=7 | 1h 42.9% avg -0.148% n=7 | 4h 14.3% avg -0.921% n=7
+- 🟡 SOL_LONG_SHADOW_CONFIRMED_INVERSE_SHORT: LOW_N_TRACKING | n=3 | 1h 33.3% avg -0.079% n=3 | 4h 33.3% avg -0.196% n=3
+- 🟡 SOL_SHORT_SHORTS_COVERING_WATCH: LOW_N_TRACKING | n=1 | 1h 100.0% avg 0.235% n=1 | 4h 0.0% avg -1.615% n=1
+
+## Asset split
+- ⚠️ SOL_LONG_WATCH_ONLY / SOL: REVIEW_OR_UNTRACK | n=696 | 1h 53.2% avg 0.025% n=695 | 4h 49.4% avg 0.030% n=694
+- ⚠️ FADE_SHORT_LATE_AFTER_LOW / SOL: REVIEW_OR_UNTRACK | n=507 | 1h 49.5% avg -0.003% n=507 | 4h 49.1% avg 0.030% n=505
+- ⚠️ FADE_SHORT_LATE_AFTER_LOW / ETH: REVIEW_OR_UNTRACK | n=437 | 1h 48.7% avg 0.034% n=437 | 4h 51.0% avg 0.137% n=435
+- ⚠️ BTC_LONG_SETUP_INVERSE_SHORT_POSTFIX / BTC: REVIEW_OR_UNTRACK | n=423 | 1h 49.6% avg -0.021% n=423 | 4h 50.4% avg -0.061% n=421
+- ⚠️ FADE_SHORT_LATE_AFTER_LOW / BTC: REVIEW_OR_UNTRACK | n=412 | 1h 43.8% avg 0.011% n=411 | 4h 45.3% avg 0.009% n=411
+- ⚠️ ETH_LONG_SETUP_STRUCTURAL_BUYING_INVERSE_SHORT / ETH: REVIEW_OR_UNTRACK | n=240 | 1h 50.0% avg -0.027% n=240 | 4h 50.4% avg -0.042% n=240
+- ⚠️ ETH_BTC_PERMITS_ALT_LONG_INVERSE_SHORT_POSTFIX / ETH: REVIEW_OR_UNTRACK | n=207 | 1h 47.8% avg -0.066% n=207 | 4h 47.8% avg -0.127% n=207
+- ⚠️ ETH_LONG_BLOCKED_SELL_PRESSURE_INVERSE_SHORT_POSTFIX / ETH: REVIEW_OR_UNTRACK | n=200 | 1h 42.2% avg -0.050% n=199 | 4h 46.2% avg -0.153% n=199
+- ⚠️ ETH_LONG_SHADOW_NO_SETUP_INVERSE_SHORT / ETH: REVIEW_OR_UNTRACK | n=193 | 1h 53.4% avg -0.016% n=193 | 4h 47.9% avg -0.141% n=192
+- ⚠️ ETH_LONG_SHADOW_BLOCKED_INVERSE_SHORT / ETH: REVIEW_OR_UNTRACK | n=179 | 1h 53.1% avg 0.083% n=179 | 4h 45.8% avg -0.065% n=179
+- ⚠️ T1_FRESH_LONGS_LONG / SOL: REVIEW_OR_UNTRACK | n=176 | 1h 49.6% avg -0.011% n=123 | 4h 49.6% avg -0.148% n=123
+- ⚠️ LONGS_EXITING_LONG_UNVALIDATED / BTC: REVIEW_OR_UNTRACK | n=163 | 1h 48.5% avg 0.024% n=163 | 4h 54.6% avg 0.043% n=163
+- ⚠️ SOL_SHORT_BLOCKED_SPOT_LED_INVERSE_LONG_POSTFIX / SOL: REVIEW_OR_UNTRACK | n=135 | 1h 47.4% avg 0.046% n=135 | 4h 48.1% avg 0.099% n=135
+- ⚠️ NEUTRAL_OI_LONG / BTC: REVIEW_OR_UNTRACK | n=122 | 1h 42.6% avg -0.043% n=122 | 4h 50.0% avg 0.006% n=122
+- ⚠️ NEUTRAL_OI_LONG / ETH: REVIEW_OR_UNTRACK | n=116 | 1h 42.2% avg -0.106% n=116 | 4h 31.9% avg -0.240% n=116
+- ⚠️ SOL_SHORT_BELOW_GATE_WATCH / SOL: REVIEW_OR_UNTRACK | n=71 | 1h 47.9% avg 0.008% n=71 | 4h 53.5% avg -0.145% n=71
+- ⚠️ SHORTS_COVERING_LONG_UNVALIDATED / BTC: REVIEW_OR_UNTRACK | n=68 | 1h 39.7% avg -0.124% n=68 | 4h 29.4% avg -0.209% n=68
+- ⚠️ FADE_SHORT_POSITIVE_FUNDING / BTC: REVIEW_OR_UNTRACK | n=67 | 1h 50.7% avg 0.079% n=67 | 4h 43.9% avg 0.086% n=66
+- ⚠️ FADE_SHORT_POSITIVE_FUNDING / ETH: REVIEW_OR_UNTRACK | n=67 | 1h 47.8% avg 0.057% n=67 | 4h 56.7% avg 0.100% n=67
+- ⚠️ FRESH_LONGS_LONG_UNVALIDATED / BTC: REVIEW_OR_UNTRACK | n=62 | 1h 50.0% avg -0.050% n=62 | 4h 46.8% avg -0.021% n=62
+- ⚠️ SOL_LONG_CONFIRMED_STRUCTURAL_BUYING_INVERSE_SHORT / SOL: REVIEW_OR_UNTRACK | n=58 | 1h 39.7% avg -0.166% n=58 | 4h 51.7% avg -0.231% n=58
+- ✅ ETH_LONG_CONFIRMED_INVERSE_SHORT / ETH: KEEP_TRACKING | n=49 | 1h 69.4% avg 0.112% n=49 | 4h 61.2% avg 0.247% n=49
+- ⚠️ FRESH_SHORTS_LONG / ETH: REVIEW_OR_UNTRACK | n=49 | 1h 53.1% avg 0.166% n=49 | 4h 67.3% avg 0.394% n=49
+- ⚠️ SOL_SHORTS_COVERING_BROAD_SHORT_PRESSURE_INVERSE_SHORT_POSTFIX / SOL: REVIEW_OR_UNTRACK | n=49 | 1h 49.0% avg -0.085% n=49 | 4h 51.0% avg -0.030% n=49
+- ⚠️ FADE_SHORT_POSITIVE_FUNDING / SOL: REVIEW_OR_UNTRACK | n=48 | 1h 54.2% avg 0.061% n=48 | 4h 62.5% avg 0.468% n=48
+- ⚠️ ETH_LONG_CONFIRMED_SPOT_LED_INVERSE_SHORT / ETH: REVIEW_OR_UNTRACK | n=47 | 1h 55.3% avg 0.011% n=47 | 4h 53.2% avg -0.021% n=47
+- ⚠️ ETH_LONG_SHADOW_SETUP_FORMING_INVERSE_SHORT / ETH: REVIEW_OR_UNTRACK | n=31 | 1h 54.8% avg 0.129% n=31 | 4h 46.7% avg 0.049% n=30
+- ⚠️ FRESH_SHORTS_LONG / BTC: REVIEW_OR_UNTRACK | n=27 | 1h 55.6% avg 0.147% n=27 | 4h 40.7% avg -0.006% n=27
+- ⚠️ ETH_LONGS_EXITING_BROAD_SHORT_PRESSURE_LONG_POSTFIX / ETH: REVIEW_OR_UNTRACK | n=15 | 1h 53.3% avg 0.047% n=15 | 4h 60.0% avg 0.120% n=15
+- ⚠️ SHORTS_COVERING_LONG_UNVALIDATED / ETH: REVIEW_OR_UNTRACK | n=9 | 1h 44.4% avg -0.404% n=9 | 4h 33.3% avg -0.712% n=9
+- 🟡 FRESH_SHORTS_LONG / SOL: LOW_N_TRACKING | n=6 | 1h 33.3% avg 0.033% n=6 | 4h 66.7% avg 0.810% n=6
+- 🟡 N1_GATE_COST / SOL: LOW_N_TRACKING | n=5 | 1h 40.0% avg -0.117% n=5 | 4h 0.0% avg -0.514% n=5
+- 🟡 SOL_LONG_SHADOW_CONFIRMED_INVERSE_SHORT / SOL: LOW_N_TRACKING | n=3 | 1h 33.3% avg -0.079% n=3 | 4h 33.3% avg -0.196% n=3
+- 🟡 N1_GATE_COST / BTC: LOW_N_TRACKING | n=1 | 1h 100.0% avg 0.193% n=1 | 4h 100.0% avg 0.578% n=1
+- 🟡 N1_GATE_COST / ETH: LOW_N_TRACKING | n=1 | 1h 0.0% avg -0.641% n=1 | 4h 0.0% avg -4.455% n=1
+- 🟡 SOL_SHORT_SHORTS_COVERING_WATCH / SOL: LOW_N_TRACKING | n=1 | 1h 100.0% avg 0.235% n=1 | 4h 0.0% avg -1.615% n=1
