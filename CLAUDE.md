@@ -1,38 +1,25 @@
 # Market Intel — Claude Context
 
-Automated crypto/gold trading signal system (OpenClaw). Node.js, runs on cron.
+Market Intel is a daily paper strategy book for crypto perps, plus a 15-minute research data collector. It is written in Node.js and runs from the user crontab. Read `README.md` for the layout and `docs/STRATEGY_BOOK.md` for the rules and evidence.
 
 ## Current phase
 
-**Phase 1/1b/1d burn-in + Phase 2 shadow collection (as of 2026-05-10)**
+**Phase S1: paper trading, 2026-09-26 → about 2026-11-21 (56 days).** The pass bar is in `docs/STRATEGY_BOOK.md`.
 
-Shadow gate is a **production guardrail, not validated alpha**. n≥10 shadow-gated contexts required before treating it as evidence-backed. Do not activate readiness gating, change alert severity, or modify orchestrator cadence until Phase 3 evaluation supports it.
+## Hard rules
 
-## Hard constraints — do not violate without explicit user go-ahead
-
-- Do not tune readiness scoring weights on the current validation sample — future formulas must be versioned separately
-- Do not raise or lower the 70-score threshold without n≥50 in the ≥70 bucket
-- Scores are only comparable inside a valid regime. Evaluate alerts in order: regime → mechanism → empirical pattern history → score.
-- BTC_WEAK_VETO_ALT_LONGS is an absolute hard block regardless of numeric score (score 80+ still blocked — confirmed empirically). It means local setup present / regime invalid, not a penalty.
-- **Inverse-signal rule:** when a setup bucket has a high historical error rate / adverse follow-through, treat that as positive directional information for the opposite side, not just “bad data.” Flag it centrally, surface it prominently, and never let a high readiness score override an adverse empirical bucket without explicitly calling out why. Current example: `SHORTS_COVERING+LONG` history `UP 0/4 @1h/4h` means long alert should be treated as bearish/inverse information until disproven.
-- Do not add flow-based gates — flow type at alert time has near-zero discriminating power (C2)
-- Do not fire or suppress Telegram alerts based on readiness score yet
-- Do not create active contexts from MEDIUM alerts (RETEST_HELD etc.) — only from HIGH LONG_CONFIRMED / SHORT_CONFIRMED
-
-## Canonical docs
-
-- `PHASE_STATUS.md` — current implementation state, what's done, what's next
-- `docs/READINESS_ENGINE_SPEC.md` — frozen readiness_shadow_v0 scoring formula
-- `docs/MICROSTRUCTURE_CONFIRMATION_ENGINE.md` — canonical semantic gate spec
-- Memory files — validated signal patterns with confidence tiers (CONFIRMED/TENTATIVE/RETRACTED)
+- **Goal:** positive expectancy after costs, out-of-sample. A high win rate is not the goal. Random entries can reach a 75% win rate and still lose money.
+- **Changing strategy rules:** test in `research/backtest.py` on 2021+ data first. Use standard parameters with no grid search. The result needs t ≥ 3 and must be positive in both 2021–23 and 2024+. Then port the change to `scripts/strategy-book.js` and confirm that `--replay-from` matches the backtest.
+- **During the paper period:** do not change rules in response to live results. If a rule changes, bump `version` in the state and restart the book.
+- **The 15-minute collector is data-only:**
+  - Do not build 2–6h signals from it without a written hypothesis and a multi-year-style test.
+  - The 2026-09 audit tested about 111k conditions and none worked.
+  - The old Phase 1d alert engine was deleted for that reason.
+- **Leverage:** none during paper trading. Recommended maximum afterwards is 1.5× on the whole book.
+- **Cron:** every cron line must set PATH to node v24.18.0. openclaw needs node ≥24.15.
 
 ## Key files
 
-- `orchestrator.js` — main cron runner, all Phase 1 gates
-- `scripts/phase1d-alerts.js` — Phase 1d transition alerts + Phase 2 shadow scoring
-- `scripts/fetch-market-microstructure.js` — 15m microstructure collector
-- `data/readiness-shadow.jsonl` — unconditional 15m per-asset snapshots (burn-in data)
-- `data/phase1d-alert-state.json` — active context state
-- `data/trigger-state.json` — persistent trigger/cooldown state
-
-Before implementing anything, confirm the current state in PHASE_STATUS.md first.
+- `scripts/strategy-book.js`: rules, accounting and Telegram summary. State and ledger are in `data/strategy-book/`.
+- `scripts/run-collector-cron.sh`: runs the collectors, then `scripts/write-health.js`.
+- `data/microstructure-history.jsonl` and `data/binance-context-history.jsonl`: the research history. Do not delete.

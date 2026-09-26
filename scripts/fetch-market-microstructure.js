@@ -67,7 +67,7 @@ function readJson(file, fallback = null) {
 
 const MAX_BACKPACK_SNAPSHOT_AGE_MS = 20 * 60 * 1000;
 
-// Matches orchestrator.js's readFreshJson guard: a snapshot stale past its
+// Freshness guard: a snapshot stale past its
 // expected refresh cadence is treated as missing rather than silently fed in
 // as current (backpack-snapshot-lite.json went 11 days unrefreshed before
 // this check existed, feeding a frozen candle into oi_price_regime scoring).
